@@ -1,0 +1,37 @@
+{
+  "user": "<YOUR USERNAME>",
+  "rvm": {
+    "ruby": {
+      "default_version": "ruby-2.2.2"
+    },
+    "rubies": {
+      "version": ["ruby-2.1.2", "ruby-2.2.2"]
+    }
+  },
+  "homebrew": {
+    "taps" : [ "caskroom/versions" ],
+    "casks": [
+              "alfred",
+              "macdown",
+              "1password",
+              "dash",
+              "iterm2",
+              "sublime-text3",
+              "google-chrome",
+              "tunnelblick"
+             ],
+    "formulas": [
+                 "git",
+                 "postgresql",
+                 "imagemagick"
+                ]
+  },
+  "run_list": [
+                "recipe[homebrew]",
+                "recipe[homebrew::cask]",
+                "recipe[homebrew::install_taps]",
+                "recipe[homebrew::install_formulas]",
+                "recipe[homebrew::install_casks]",
+                "recipe[ruby]"
+  ]
+}
