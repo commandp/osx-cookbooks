@@ -8,22 +8,25 @@
       "version": ["ruby-2.1.2"]
     }
   },
-  "brew": {
+  "homebrew": {
     "taps" : [ "caskroom/versions" ],
-    "package": [
-                "git",
-                "postgresql",
-                "fontconfig",
-                "imagemagick"]
+    "casks": [ "tunnelblick" ],
+    "formulas": [
+                  "git",
+                  "postgresql",
+                  "fontconfig",
+                  "imagemagick"
+                ]
   },
   "ssh_keys": [ "ssh-rsa AAAAxx" ],
   "run_list": [
-    "recipe[homebrew]",
-    "recipe[brew_install]",
-    "recipe[commandp]",
-    "recipe[ruby]",
-    "recipe[dmg]",
-    "recipe[tunnelblick]",
-    "recipe[users]"
+                "recipe[homebrew]",
+                "recipe[homebrew::cask]",
+                "recipe[homebrew::install_taps]",
+                "recipe[homebrew::install_formulas]",
+                "recipe[homebrew::install_casks]",
+                "recipe[commandp]",
+                "recipe[ruby]",
+                "recipe[users]"
   ]
 }
