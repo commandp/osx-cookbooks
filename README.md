@@ -22,11 +22,11 @@ A chef repository for automating the configuration of MAC OS X workstations for 
 
     $ git clone https://github.com/commandp/osx-cookbooks.git ~/osx-cookbooks ; cd ~/osx-cookbooks/
 
-#### 5.change rails_dev.json user attribute
+#### 5.change `rails_dev.json` user attribute
 
       "user": "<YOUR USERNAME>"
 
-#### 5.Deploy
+#### 6.Deploy
 
     $ ./script/deploy.sh
 
