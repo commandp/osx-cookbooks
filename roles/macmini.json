@@ -15,7 +15,8 @@
                   "git",
                   "postgresql",
                   "fontconfig",
-                  "imagemagick"
+                  "imagemagick",
+                  "webp"
                 ]
   },
   "ssh_keys": [ "ssh-rsa AAAAxx" ],
